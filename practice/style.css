@@ -1,0 +1,109 @@
+@@ -0,0 +1,56 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+        ),
+        url("bakerybackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a{
+    color:rgb(73, 36, 21);
+    text-decoration: text-decoration: wavy overline lime;
+}
+img{
+    max-width: 50%;
+    
+}
+/*utilities*/
+.btn-fill{
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color:white;
+}
+.container{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*header*/
+.site-init{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: beige;
+}
+    .site-init h1 {
+    color: #a64d6d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: 1px;
+
+}
+.navigation a{
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/*main*/
+.dish-month-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:50px;
+}
+.price-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.homepage-image {
+    display: block;
+    width: 700px;
+    max-width: 90%;
+    height:fit-content;
+    margin: 40px auto;
+    border: 3px solid #c98296;
+    border-radius: 20px;
+   
+}
+.about-cafe{
+     max-width: 700px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #fff8f3;
+    border: 2px solid #c98296;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 90%;
+}
+.about-cafe h2 {
+    margin-top: 0;
+    color: #93405d;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.about-cafe p {
+    color: #59434b;
+    font-size: 17px;
+    line-height: 1.8;
+}
