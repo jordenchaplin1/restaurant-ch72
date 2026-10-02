@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <form action="" method=""><!-- these attributes allos us to handle allow us to handle data to the server -->
+        <label for="fname">First Name:</label>
+        <input type-text" id="fname">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p> Select the options that applies to you:</p>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+
+    </form>
+
+    <P>Elements inside a form:</P>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>First Name:</label>
+            <input type="text" name="fname"><br>
+        </fieldset> 
+
+        <fieldset>
+            <legend>Vehicles</legend>
+            <label for="cars">Choose a car:</label>
+            <select id="cars">
+                <option value="BMW">BMW</option>
+                <option value="toyota">Toyota</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Body:</legend>
+            <label>Leave a message:</label>
+            <textarea id="message" rows="10" cols="80" placeholder="type here ..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Input types:</legend>
+                <!--password field-->
+                <label>Password</label>
+                <input type="password" id="password" maxlength="8">
+                <br>
+                <!-- Color input-->
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color">
+
+                <!-- Email input-->
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <!-- Date input-->
+                 <label for="date">Birthday:</label>
+                <input type="date" id="date">
+
+                <!-- Number input-->
+                 <label for="number">Age:</label>
+                <input type="number" id="number" min="1" max="10">
+
+                <!-- File input-->
+                <label for="file">Choose a file:</label>
+                <input type="file" id="file">
+        </fieldset>
+        <input type="submit" value="Submit">
+
+        <fieldset>
+            <legend>Credit Check</legend>
+
+            <label>Phone Number:</label>       
+            <input type="tel" id="tel">
+
+            <label>Last four of Social</label>  <!--wasnt too sure how to go about social security number so I added it as a password-->
+            <input type="password" id="password" maxlength="4">
+
+            <input type="submit" value="Submit">
+
+        </fieldset>
+       </form>
+       
+       </form>
+</body>
+</html>
