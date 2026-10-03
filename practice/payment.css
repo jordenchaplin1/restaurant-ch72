@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff8f3;
+    color: #59434b;
+    font-family: Arial, sans-serif;
+}
+
+.about-cafe {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #c98296;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: #93405d;
+    font-family: Georgia, serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #c98296;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-fill {
+    width: 100%;
+    padding: 12px;
+    background-color: #93405d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-fill:hover {
+    background-color: #713047;
+}
+
+#payment-message {
+    color: #326b3b;
+    font-weight: bold;
+}

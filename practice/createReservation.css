@@ -1,0 +1,51 @@
+/* Header and navigation */
+.site-init {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+     background-color: rgb(204, 204, 161);
+}
+
+.site-init h1 {
+    color: #a64d6d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #492415;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #a64d6d;
+    text-decoration: underline;
+}
+
+/* Navigation on phones */
+@media (max-width: 768px) {
+    .site-init {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-init h1 {
+        font-size: 30px;
+    }
+
+    .navigation {
+        gap: 12px 18px;
+    }
+}

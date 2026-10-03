@@ -1,0 +1,32 @@
+/*basic style of tables*/
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(210, 226, 226);
+}
+table{
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+th{
+    background-color: rgb(139, 153, 153)
+}
+.confirmed{
+    background-color: rgb(119, 202, 119);
+}
+.pending{
+    background-color: rgb(216, 216, 127);
+}
+.canceled{
+    background-color: rgb(223, 106, 106);
+}

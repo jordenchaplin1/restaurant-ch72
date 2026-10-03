@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="forms.css">
+          <link rel="stylesheet" href="createReservation.css">
+    <title>Create Reservation</title>
+</head>
+<body>
+    <header class="site-init">
+        <h1>Jo Shmoes Cafe</h1>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="createReservation.html">Create a reservation</a>
+        </nav>
+    </header>
+    <main>
+        <div class="reservation-wrapper">
+            <h1>Reserve your table</h1>
+            <p>Fill out the form below to reserve your table at our restaurant. We look forward to serving you!</p>
+
+        <form class="reservation-form" action="payment.html" method="get">
+    <div class="input-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="input-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+    </div>
+
+    <div class="input-group">
+        <label for="name">Guest Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="input-group">
+        <label for="guests">Party Size:</label>
+        <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            required
+        >
+    </div>
+
+    <button class="btn-fill" type="submit">
+        Continue to payment
+    </button>
+</form>
+        </div>
+    </main>
+    </body>
+    </html>

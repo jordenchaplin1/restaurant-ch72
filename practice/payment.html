@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+    <title>Reservation Payment</title>
+</head>
+<body>
+    <main class="about-cafe">
+        <h2>Reservation Payment</h2>
+        <p id="reservation-summary"></p>
+        <p>Reservation deposit: $10.00</p>
+        <p>Demo payment only. No money will be charged.</p>
+
+        <form id="payment-form">
+            <label for="payment-method">Payment method</label>
+
+            <select id="payment-method" required>
+                <option value="">Choose a method</option>
+                <option value="demo-card">Demo credit card</option>
+                <option value="demo-wallet">Demo digital wallet</option>
+            </select>
+
+            <button type="submit" class="btn-fill">
+                Simulate payment
+            </button>
+        </form>
+
+        <p id="payment-message" role="status"></p>
+    </main>
+
+    <script>
+        const details = new URLSearchParams(window.location.search);
+        const summary = document.getElementById("reservation-summary");
+
+        const name = details.get("name");
+        const date = details.get("date");
+        const time = details.get("time");
+        const guests = details.get("guests");
+
+        const paymentForm = document.getElementById("payment-form");
+
+        if (name && date && time && guests) {
+            summary.textContent =
+                `${name}: ${guests} guest(s) on ${date} at ${time}.`;
+        } else {
+            summary.textContent =
+                "Please create a reservation before making a payment.";
+
+            paymentForm.hidden = true;
+        }
+
+        paymentForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("payment-message").textContent =
+                "Demo payment successful! Your pretend reservation is confirmed.";
+
+            paymentForm.hidden = true;
+        });
+    </script>
+</body>
+</html>
